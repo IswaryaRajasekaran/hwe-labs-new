@@ -5,7 +5,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-handle= os.environ.get("AWS_HANDLE")
+#handle= os.environ.get("irajasekaran")
+handle = "irajasekaran"
 aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 
@@ -18,7 +19,7 @@ s3 = boto3.client(
 
 
 # Define the S3 bucket and file path
-bucket_name = 'hwe-fall-2023'
+bucket_name = 'hwe-fall-2024'
 file_key = f'{handle}/success_message'
 
 # Download and display the contents of the S3 object
